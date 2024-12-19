@@ -3,13 +3,13 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - ci-fix
       
 jobs:
   publish:
     name: Publish to docs branch
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v2
